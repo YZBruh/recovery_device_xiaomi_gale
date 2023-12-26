@@ -11,4 +11,4 @@
 |Storage             |128/256GB                        |
 
 ### Device picture
-[Xiaomi Redmi 13C](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-1.jpg)
+![Xiaomi Redmi 13C](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-2.jpg)
