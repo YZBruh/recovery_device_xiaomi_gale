@@ -39,15 +39,14 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
-service gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-service
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
     user root
     group root
     disabled
     seclabel u:r:recovery:s0
 
-service keymaster-4-1 /system/bin/android.hardware.keymaster@4.1-service.beanpod
-    interface android.hardware.keymaster@4.0::IKeymasterDevice default
+service keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
     interface android.hardware.keymaster@4.1::IKeymasterDevice default
     user root
     group root drmrpc
@@ -72,7 +71,7 @@ on property:ro.crypto.state=unencrypted
         
 on property:twrp.all.users.decrypted=true
     stop teei_daemon
-    stop keymaster-4-0
+    stop keymaster-4-1
     stop gatekeeper-1-0
    
 on boot
