@@ -10,5 +10,39 @@
 |Android Version     |13                                                         |
 |Storage             |128/256GB                        |
 
+## Situation
+- [X] Correct screen/recovery size
+- [x] Working Touch, screen
+- [X] Backup to internal/microSD
+- [X] Restore from internal/microSD
+- [ ] reboot to system
+- [X] ADB
+
+Medium checks
+- [X] update.zip sideload
+- [X] UI colors (red/blue inversions)
+- [X] Screen goes off and on
+- [X] F2FS/EXT4 Support, exFAT/NTFS where supported
+- [X] all important partitions listed in mount/backup lists
+- [X] backup/restore to/from external (USB-OTG) storage
+- [X] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
+- [ ] decrypt /data
+- [X] Correct date
+
+Minor checks
+- [X] MTP export
+- [X] reboot to bootloader
+- [X] reboot to recovery
+- [X] poweroff
+- [X] battery level
+- [X] temperature
+- [X] encrypted backups
+- [?] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
+- [?] USB mass storage export
+- [?] set brightness
+- [?] vibrate
+- [X] screenshot
+- [x] partition SD card
+
 ### Device picture
 ![Xiaomi Redmi 13C](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-2.jpg)
