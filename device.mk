@@ -3,8 +3,10 @@ LOCAL_PATH := device/xiaomi/gale
 # OTA parts
 AB_OTA_PARTITIONS += \
     system \
+    system_ext \
     vendor \
     product \
+    mi_ext \
     boot \
     vbmeta_vendor \
     vbmeta_system \
@@ -13,10 +15,14 @@ AB_OTA_PARTITIONS += \
     logo \
     md1img \
     preloader \
-    scp \
-    spmfw \
-    sspm \
-    tee
+    scp1 \
+    scp2 \
+    spmfw_1 \
+    spmfw_2 \
+    sspm1 \
+    sspm2 \
+    tee1 \
+    tee2
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
