@@ -32,7 +32,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 BOARD_USES_METADATA_PARTITION := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := gale
+TARGET_BOOTLOADER_BOARD_NAME := gale,gust
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -43,7 +43,6 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := \
        bootopt=64S3,32N2,64N2 \
-       buildvariant=user \
        androidboot.selinux=permissive \ # It would be better if selinux is in permissioned mode
        androidboot.force_normal_boot=1
 
