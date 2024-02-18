@@ -1,5 +1,23 @@
 LOCAL_PATH := device/xiaomi/gale
 
+# OTA parts
+AB_OTA_PARTITIONS += \
+    system \
+    vendor \
+    product \
+    boot \
+    vbmeta_vendor \
+    vbmeta_system \
+    dtbo \
+    lk \
+    logo \
+    md1img \
+    preloader \
+    scp \
+    spmfw \
+    sspm \
+    tee
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -18,7 +36,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctrl \
+    bootctl \
     update_engine_client
 
 PRODUCT_PACKAGES += \
@@ -55,12 +73,3 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
     libhealthd.$(PRODUCT_PLATFORM)
-
-# libion & libxml2
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libion \
-    libxml2
-
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
