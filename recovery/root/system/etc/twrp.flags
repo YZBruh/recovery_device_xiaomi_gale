@@ -6,6 +6,7 @@
 /vendor_image      emmc       	logical            flags=display="Vendor (Image)";backup=1;flashimg=1;slotselect
 /product_image     emmc         logical            flags=display="Product (Image)";backup=1;flashimg=1;slotselect
 /mi_ext_image      emmc       	logical            flags=display="Mi_EXT (Image)";backup=1;flashimg=1;slotselect
+/super_image       emmc        /dev/block/by-name/super            flags=display="Super (Image)";backup=1;flashimg=1
 
 ## Firmware
 /boot              emmc        /dev/block/by-name/boot             flags=display="Boot";slotselect;backup=1;flashimg=1
@@ -14,10 +15,12 @@
 /audio_dsp         emmc        /dev/block/by-name/audio_dsp        flags=display="Audio_DSP";backup=1
 /dtbo			         emmc	       /dev/block/by-name/dtbo	           flags=display="DTBO";slotselect;backup=1;flashimg=1
 /para			         emmc	       /dev/block/by-name/para	           flags=display="Para";backup=1;flashimg=1
+/vbmeta			       emmc	       /dev/block/by-name/vbmeta	         flags=display="VBMeta";slotselect;backup=1;flashimg=1
 /vbmeta_vendor	   emmc        /dev/block/by-name/vbmeta_vendor    flags=display="VBMeta_vendor";slotselect;backup=1;flashimg=1
 /vbmeta_system     emmc        /dev/block/by-name/vbmeta_system    flags=display="VBMeta_system";slotselect;backup=1;flashimg=1
 
 ## Sensitive data
+/cust	             ext4	       /dev/block/by-name/cust	           flags=display="Cust";backup=1;flashimg=1
 /persist	         ext4	       /dev/block/by-name/persist	         flags=display="Persist";backup=1;flashimg=1;fsflags=ro
 /protect_f	       emmc        /dev/block/by-name/protect1         flags=display="PROTECT_F";backup=1;flashimg=1
 /protect_s	       emmc        /dev/block/by-name/protect2         flags=display="PROTECT_S";backup=1;flashimg=1
