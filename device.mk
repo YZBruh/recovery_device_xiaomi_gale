@@ -7,7 +7,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     product \
     mi_ext \
+    cust \
     boot \
+    vendor_boot \
     vbmeta_vendor \
     vbmeta_system \
     dtbo \
@@ -15,14 +17,10 @@ AB_OTA_PARTITIONS += \
     logo \
     md1img \
     preloader \
-    scp1 \
-    scp2 \
-    spmfw_1 \
-    spmfw_2 \
-    sspm1 \
-    sspm2 \
-    tee1 \
-    tee2
+    scp \
+    spmfw \
+    sspm \
+    tee
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
