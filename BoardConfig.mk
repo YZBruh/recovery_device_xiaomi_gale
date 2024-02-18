@@ -44,7 +44,8 @@ BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := \
        bootopt=64S3,32N2,64N2 \
        buildvariant=user \
-       androidboot.selinux=permissive # It would be better if selinux is in permissioned mode
+       androidboot.selinux=permissive \ # It would be better if selinux is in permissioned mode
+       androidboot.force_normal_boot=1
 
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x07c08000
