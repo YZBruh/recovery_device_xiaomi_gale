@@ -34,9 +34,19 @@
 /sspm   		       emmc	       /dev/block/by-name/sspm             flags=display="SSPM";slotselect;backup=1
 /md1img		         emmc	       /dev/block/by-name/md1img	         flags=display="MD1İMG";slotselect;backup=1
 /gz 		           emmc	       /dev/block/by-name/gz 	             flags=display="GZ";slotselect;backup=1
+/lk		             emmc	       /dev/block/by-name/lk	             flags=display="LK";slotselect;backup=1
 /spmfw		         emmc	       /dev/block/by-name/spmfw	           flags=display="SPMFW";slotselect;backup=1
 /boot_para	       emmc	       /dev/block/by-name/boot_para	       flags=display="BOOT_PARA";backup=1;flashimg=1
 /otp               emmc        /dev/block/by-name/otp              flags=display="OTP";backup=1
+/efuse		         emmc	       /dev/block/by-name/efuse            flags=display="EFUSE";backup=1
+/expdb		         emmc	       /dev/block/by-name/expdb	           flags=display="EXPDB";backup=1
+/sec1		           emmc	       /dev/block/by-name/sec1	           flags=display="SEC1";backup=1
+/flashinfo		     emmc	       /dev/block/by-name/flashinfo        flags=display="Flashinfo";backup=1
+/ffu	             emmc	       /dev/block/by-name/ffu              flags=display="FFU";backup=1
+/gsort 		         emmc	       /dev/block/by-name/gsort            flags=display="GSORT";backup=1
+/bk0		           emmc	       /dev/block/by-name/bk0	             flags=display="BK0";backup=1
+/bk1		           emmc	       /dev/block/by-name/bk1	             flags=display="BK1";backup=1
+/bk2		           emmc	       /dev/block/by-name/bk2	             flags=display="BK1";backup=1
 
 # Removable storage
 /external_sd       vfat      /dev/block/mmcblk1p1    /dev/block/mmcblk1                flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
