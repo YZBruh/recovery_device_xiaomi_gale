@@ -1,21 +1,29 @@
 # Recovery Device Tree for Xiaomi Redmi 13C (gale)
-## Device spefication (briefly)
-|Basic               |Spec Sheet                                                          |
-|--                  |--                                                                  |
-|CPU                 |Octa-core (2x 2.0 GHz ARM Cortex-A75 and 6x 1.8 GHz ARM Cortex-A55) |
-|Chipset             |MediaTek Helio G85 (MT6769V/CZ)                                     |
-|GPU                 |Mali-G52 MC2                                                        |
-|Codename            |gale                                                                |
-|Memory              |4/6/8GB RAM                                                         |
-|Android Version     |13                                                                  |
-|Storage             |128/256GB                                                           |
+## Device spefication
+Basic   | Spec Sheet
+-------:|:-------------------------
+OS	    | Android 13, MIUI 14.x.xx.x
+CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)
+Chipset | MediaTek Helio G85 (12nm)
+GPU     | Mali-G52 MC2
+Memory  | 4GB/6GB/8GB RAM
+Storage | 128GB/256GB
+MicroSD | microSDXC (dedicated slot)
+Battery | Non-removable Li-Po 5000 mAh battery
+Resolution | 720 x 1600 pixels, 20:9 ratio (~260 ppi density)
+Camera (Rear)  | 50 MP, f/1.8, 28mm (wide), PDAF, 2 MP, f/2.4, (macro), 0.08 MP (auxiliary lens)
+Rear Camera Features | LED flash, HDR
+Video	| 1080p@30fps	
+Camera (Front)  | 8 MP, f/2.0
+Features| Fingerprint (side-mounted), accelerometer, compass, Virtual proximity sensing
+
 
 ## Situation
 - [X] Correct screen/recovery size
 - [x] Working Touch, screen
 - [X] Backup to internal/microSD
 - [X] Restore from internal/microSD
-- [ ] reboot to system
+- [x] reboot to system
 - [X] ADB
 
 Medium checks
@@ -37,10 +45,10 @@ Minor checks
 - [X] battery level
 - [X] temperature
 - [X] encrypted backups
-- [?] input devices via USB (USB-OTG) - keyboard, mouse and disks
-- [?] USB mass storage export
-- [?] set brightness
-- [?] vibrate
+- [x] input devices via USB (USB-OTG) - keyboard, mouse and disks
+- [x] USB mass storage export
+- [x] set brightness
+- [x] vibrate
 - [X] screenshot
 - [x] partition SD card
 
