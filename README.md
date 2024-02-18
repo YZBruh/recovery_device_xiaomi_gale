@@ -1,4 +1,4 @@
-# Recovery Device Tree for Xiaomi Redmi 13C (gale)
+# Recovery Device Tree for Xiaomi Redmi 13C / POCO C65 (gale/gust)
 ## Device spefication
 Basic   | Spec Sheet
 -------:|:-------------------------
