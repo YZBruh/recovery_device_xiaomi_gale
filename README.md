@@ -45,4 +45,4 @@ Minor checks
 - [x] partition SD card
 
 ### Device picture
-![Xiaomi Redmi 13C](https://i02.appmifile.com/mi-com-product/fly-birds/redmi-13c/M/3b6cc7ec36f2f3b6f1804d7059038e07.png?f=webp)
+![Xiaomi Redmi 13C](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg)
