@@ -10,9 +10,9 @@
 
 ## Firmware
 /boot              emmc        /dev/block/by-name/boot             flags=display="Boot";slotselect;backup=1;flashimg=1
+/vendor_boot       emmc        /dev/block/by-name/vendor_boot      flags=display="Vendor_boot";slotselect;backup=1;flashimg=1
 /seccfg            emmc        /dev/block/by-name/seccfg           flags=display="SECCFG";backup=1;flashimg=1
 /logo	             emmc	       /dev/block/by-name/logo	           flags=display="Logo";slotselect;backup=1
-/audio_dsp         emmc        /dev/block/by-name/audio_dsp        flags=display="Audio_DSP";backup=1
 /dtbo			         emmc	       /dev/block/by-name/dtbo	           flags=display="DTBO";slotselect;backup=1;flashimg=1
 /para			         emmc	       /dev/block/by-name/para	           flags=display="Para";backup=1;flashimg=1
 /vbmeta			       emmc	       /dev/block/by-name/vbmeta	         flags=display="VBMeta";slotselect;backup=1;flashimg=1
@@ -20,25 +20,21 @@
 /vbmeta_system     emmc        /dev/block/by-name/vbmeta_system    flags=display="VBMeta_system";slotselect;backup=1;flashimg=1
 
 ## Sensitive data
-/cust	             ext4	       /dev/block/by-name/cust	           flags=display="Cust";backup=1;flashimg=1
 /persist	         ext4	       /dev/block/by-name/persist	         flags=display="Persist";backup=1;flashimg=1;fsflags=ro
+/persistbak	       ext4	       /dev/block/by-name/persistbak       flags=display="Persist_BAK";backup=1;flashimg=1;fsflags=ro
+/cust	             ext4	       /dev/block/by-name/cust	           flags=display="CUST";backup=1;flashimg=1;fsflags=ro
 /protect_f	       emmc        /dev/block/by-name/protect1         flags=display="PROTECT_F";backup=1;flashimg=1
 /protect_s	       emmc        /dev/block/by-name/protect2         flags=display="PROTECT_S";backup=1;flashimg=1
 /nvdata		         emmc	       /dev/block/by-name/nvdata	         flags=display="NVDATA";backup=1;flashimg=1
 /nvcfg	        	 emmc	       /dev/block/by-name/nvcfg	           flags=display="NVCFG";backup=1;flashimg=1
 /nvram	           emmc        /dev/block/by-name/nvram            flags=display="NVRAM";backup=1;flashimg=1
 /persistent	       emmc        /dev/block/by-name/frp              flags=display="Persistent";backup=1;
-/tee1 		         emmc	       /dev/block/by-name/tee1	           flags=display="TEE1";backup=1
-/tee2 		         emmc	       /dev/block/by-name/tee2	           flags=display="TEE2";backup=1
-/scp1 	           emmc	       /dev/block/by-name/scp1             flags=display="SCP1";backup=1
-/scp2 	           emmc	       /dev/block/by-name/scp2             flags=display="SCP2";backup=1
-/sspm_1 		       emmc	       /dev/block/by-name/sspm_1	         flags=display="SSPM_1";backup=1
-/sspm_2 		       emmc	       /dev/block/by-name/sspm_2	         flags=display="SSPM_2";backup=1
-/md1img		         emmc	       /dev/block/by-name/md1img	         flags=display="MD1İMG";backup=1
-/md1dsp		         emmc	       /dev/block/by-name/md1dsp	         flags=display="MD1DSP";backup=1
-/gz1 		           emmc	       /dev/block/by-name/gz1 	           flags=display="GZ1";backup=1
-/gz2 		           emmc	       /dev/block/by-name/gz2 	           flags=display="GZ2";backup=1
-/spmfw		         emmc	       /dev/block/by-name/spmfw	           flags=display="SPMFW";backup=1
+/tee 		           emmc	       /dev/block/by-name/tee 	           flags=display="TEE";slotselect;backup=1
+/scp 	             emmc	       /dev/block/by-name/scp              flags=display="SCP";slotselect;backup=1
+/sspm   		       emmc	       /dev/block/by-name/sspm             flags=display="SSPM";slotselect;backup=1
+/md1img		         emmc	       /dev/block/by-name/md1img	         flags=display="MD1İMG";slotselect;backup=1
+/gz 		           emmc	       /dev/block/by-name/gz 	             flags=display="GZ";slotselect;backup=1
+/spmfw		         emmc	       /dev/block/by-name/spmfw	           flags=display="SPMFW";slotselect;backup=1
 /boot_para	       emmc	       /dev/block/by-name/boot_para	       flags=display="BOOT_PARA";backup=1;flashimg=1
 /otp               emmc        /dev/block/by-name/otp              flags=display="OTP";backup=1
 
