@@ -11,17 +11,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    system \
-    system_ext \
-    vendor \
-    vendor_dlkm \
-    product \
-    boot \
-    vbmeta_vendor \
-    vbmeta_system \
-    odm \
-    odm_dlkm
 
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
@@ -55,7 +44,7 @@ TARGET_SCREEN_DENSITY := 320
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := \
-	   bootopt=64S3,32N2,64N2 \
+       bootopt=64S3,32N2,64N2 \
        buildvariant=user \
        androidboot.selinux=permissive # It would be better if selinux is in permissioned mode
 
@@ -84,11 +73,14 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_SUPER_PARTITION_GROUPS := mtk_dynamic_partitions
+BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
+BOARD_MTK_DYNAMIC_PARTITIONS_SIZE := 9122611200
+
 TARGET_COPY_OUT_VENDOR := vendor
-BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
-BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product system_ext
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 
+TARGET_COPY_OUT_PRODUCT := product
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
